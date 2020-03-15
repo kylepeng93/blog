@@ -70,10 +70,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-position的几种定位方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/03/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2020-03-15T09:36:41.282Z" itemprop="datePublished">2020-03-15</time>
+    <a href="/2020/03/15/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2020-03-15T12:46:00.000Z" itemprop="datePublished">2020-03-15</time>
 </a>
     
   </div>
@@ -84,7 +84,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/03/15/hello-world/">你好 世界</a>
+      <a class="p-name article-title" href="/2020/03/15/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/">position的几种定位方式</a>
     </h1>
   
 
@@ -92,27 +92,56 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>欢迎来到<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是你的第一次发布，查看<a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> 来获取更多的信息。如果你在使用Hexo的过程中遇到问题，你可以在<a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> 或者在<a href="https://hexo.io/docs/" target="_blank" rel="noopener">GitHub</a> 提问。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建你的第一次发布"><a href="#创建你的第一次发布" class="headerlink" title="创建你的第一次发布"></a>创建你的第一次发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">写作</a></p>
-<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">服务器</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">部署</a></p>
+        <h2 id="position的几种定位方式"><a href="#position的几种定位方式" class="headerlink" title="position的几种定位方式"></a>position的几种定位方式</h2><p><img src="https://w.wallhaven.cc/full/96/wallhaven-96w8e8.png" alt="日出"></p>
+<ol>
+<li><strong>static</strong></li>
+</ol>
+<ul>
+<li>属于默认定位，遵循正常的文档流对象；</li>
+<li>不会受到top、bottom、left、right的影响；</li>
+</ul>
+<ol start="2">
+<li><strong>fixed</strong></li>
+</ol>
+<ul>
+<li>属于固定定位，即元素的位置相对于浏览器窗口是固定的，即使窗口滚动他也不会移动。</li>
+<li>元素的位置与文档流无关，因此不占据空间。</li>
+<li>该定位的元素会与紧跟在它后面的其他元素重叠。</li>
+</ul>
+<ol start="3">
+<li><strong>relative</strong></li>
+</ol>
+<ul>
+<li>相对其正常位置；</li>
+<li>常被作为绝对定位元素的容器块。</li>
+</ul>
+<ol start="4">
+<li><strong>absolute</strong></li>
+</ol>
+<ul>
+<li>相对于最近的已定位父元素。如果父元素没有已定位的父元素，那么它的位置相对于html；</li>
+<li>元素的位置与文档流无关，因此不占据空间；</li>
+<li>元素的位置会和其他元素重叠。</li>
+</ul>
+<ol start="5">
+<li><strong>sticky</strong></li>
+</ol>
+<ul>
+<li>粘性定位，基于用户的滚动位置来定位；</li>
+<li>在relative和fixed定位之间切换：当页面滚动超出目标区域时，它的表现就像fixed，表现为固定在目标位置；</li>
+<li>元素定位表现为在跨越阈值前为相对定位，之后为固定定位；</li>
+<li>指定top、right、bottom、或者left中四个阈值之一，才能使粘性定位生效，否则和相对定位相同。</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/hello-world/" data-id="ck7sxr0up00007ovlft41g692" data-title="你好 世界" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/" data-id="ck7t1x4cj000fewvle50t6v94" data-title="position的几种定位方式" class="article-share-link">Share</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/position/" rel="tag">position</a></li></ul>
+
     </footer>
   </div>
   
@@ -124,7 +153,7 @@
     <article id="post-popover使用教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2020-03-15T09:36:41.282Z" itemprop="datePublished">2020-03-15</time>
+  <time class="dt-published" datetime="2020-03-15T12:00:00.000Z" itemprop="datePublished">2020-03-15</time>
 </a>
     
   </div>
@@ -135,7 +164,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">popover使用教程</a>
+      <a class="p-name article-title" href="/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">bootstrap popover使用教程</a>
     </h1>
   
 
@@ -325,7 +354,53 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-id="ck7sxr0v200057ovlhthcbcq4" data-title="popover使用教程" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-id="ck7t1x4cd0005ewvlcvn10y92" data-title="bootstrap popover使用教程" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/popover/" rel="tag">popover</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-jfreechart的使用心得" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/03/15/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" class="article-date">
+  <time class="dt-published" datetime="2020-03-15T11:52:00.000Z" itemprop="datePublished">2020-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/03/15/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">jfreechart的使用心得</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Jfreechart是一个开源的统计图表展示库，使用java代码编写，于各行各业中被广泛使用。</p>
+<h2 id="柱状图"><a href="#柱状图" class="headerlink" title="柱状图"></a>柱状图</h2><h3 id="调整柱状图的展示方位"><a href="#调整柱状图的展示方位" class="headerlink" title="调整柱状图的展示方位"></a>调整柱状图的展示方位</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ChartFactory.createBarChart&#123;</span><br><span class="line">	<span class="string">"title"</span>,</span><br><span class="line">	<span class="string">"X轴"</span>,</span><br><span class="line">	<span class="string">"Y轴"</span>,</span><br><span class="line">	PlotOrientation.HORIZONTAL, <span class="comment">// 柱状图水平显示</span></span><br><span class="line">	<span class="keyword">true</span>,</span><br><span class="line">	<span class="keyword">true</span>,</span><br><span class="line">	<span class="keyword">false</span>);</span><br></pre></td></tr></table></figure>
+<p>其中 <strong>PlotOrientation.HORIZONTAL</strong> 控制柱状图水平展示，<strong>PlotOrientation.VERTICAL</strong> 控制柱状图垂直展示。</p>
+<h3 id="控制X轴的展示位置"><a href="#控制X轴的展示位置" class="headerlink" title="控制X轴的展示位置"></a>控制X轴的展示位置</h3><pre><code class="java"><span class="keyword">final</span> CategoryPlot plot = chart.getCategoryPlot();
+plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
+<p>其中 <strong>AxisLocation.TOP_OR_LEFT</strong> 控制X轴的数据居于柱状图顶部展示。<br>另外，<strong>AxisLocation.BOTTOM_OR_RIGHT</strong> 控制X轴的数据居于柱状图底部展示。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/15/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" data-id="ck7t1x4cb0003ewvlbqnj98hh" data-title="jfreechart的使用心得" class="article-share-link">Share</a>
       
       
       
@@ -340,7 +415,7 @@
     <article id="post-javascript" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/03/15/javascript/" class="article-date">
-  <time class="dt-published" datetime="2020-03-15T04:30:30.000Z" itemprop="datePublished">2020-03-15</time>
+  <time class="dt-published" datetime="2020-03-15T11:30:30.000Z" itemprop="datePublished">2020-03-15</time>
 </a>
     
   </div>
@@ -471,7 +546,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/javascript/" data-id="ck7sxr0v100047ovl3u8p2s2w" data-title="javascript最佳做法" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/javascript/" data-id="ck7t1x4cc0004ewvl2rqo7pb3" data-title="javascript最佳做法" class="article-share-link">Share</a>
       
       
       
@@ -485,10 +560,10 @@
 
 
   
-    <article id="post-position的几种定位方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-hello_world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2020/03/12/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/" class="article-date">
-  <time class="dt-published" datetime="2020-03-12T14:46:00.000Z" itemprop="datePublished">2020-03-12</time>
+    <a href="/2020/03/15/hello_world/" class="article-date">
+  <time class="dt-published" datetime="2020-03-15T09:36:41.282Z" itemprop="datePublished">2020-03-15</time>
 </a>
     
   </div>
@@ -499,7 +574,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/03/12/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/">position的几种定位方式</a>
+      <a class="p-name article-title" href="/2020/03/15/hello_world/">你好 世界</a>
     </h1>
   
 
@@ -507,56 +582,27 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="position的几种定位方式"><a href="#position的几种定位方式" class="headerlink" title="position的几种定位方式"></a>position的几种定位方式</h2><p><img src="https://w.wallhaven.cc/full/96/wallhaven-96w8e8.png" alt="日出"></p>
-<ol>
-<li><strong>static</strong></li>
-</ol>
-<ul>
-<li>属于默认定位，遵循正常的文档流对象；</li>
-<li>不会受到top、bottom、left、right的影响；</li>
-</ul>
-<ol start="2">
-<li><strong>fixed</strong></li>
-</ol>
-<ul>
-<li>属于固定定位，即元素的位置相对于浏览器窗口是固定的，即使窗口滚动他也不会移动。</li>
-<li>元素的位置与文档流无关，因此不占据空间。</li>
-<li>该定位的元素会与紧跟在它后面的其他元素重叠。</li>
-</ul>
-<ol start="3">
-<li><strong>relative</strong></li>
-</ol>
-<ul>
-<li>相对其正常位置；</li>
-<li>常被作为绝对定位元素的容器块。</li>
-</ul>
-<ol start="4">
-<li><strong>absolute</strong></li>
-</ol>
-<ul>
-<li>相对于最近的已定位父元素。如果父元素没有已定位的父元素，那么它的位置相对于html；</li>
-<li>元素的位置与文档流无关，因此不占据空间；</li>
-<li>元素的位置会和其他元素重叠。</li>
-</ul>
-<ol start="5">
-<li><strong>sticky</strong></li>
-</ol>
-<ul>
-<li>粘性定位，基于用户的滚动位置来定位；</li>
-<li>在relative和fixed定位之间切换：当页面滚动超出目标区域时，它的表现就像fixed，表现为固定在目标位置；</li>
-<li>元素定位表现为在跨越阈值前为相对定位，之后为固定定位；</li>
-<li>指定top、right、bottom、或者left中四个阈值之一，才能使粘性定位生效，否则和相对定位相同。</li>
-</ul>
+        <p>欢迎来到<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是你的第一次发布，查看<a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> 来获取更多的信息。如果你在使用Hexo的过程中遇到问题，你可以在<a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> 或者在<a href="https://hexo.io/docs/" target="_blank" rel="noopener">GitHub</a> 提问。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建你的第一次发布"><a href="#创建你的第一次发布" class="headerlink" title="创建你的第一次发布"></a>创建你的第一次发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">写作</a></p>
+<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">服务器</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">部署</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/12/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/" data-id="ck7sxr0vj000b7ovl397lce4e" data-title="position的几种定位方式" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/hello_world/" data-id="ck7t1x4c70001ewvl69zzb3cc" data-title="你好 世界" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/position/" rel="tag">position</a></li></ul>
-
     </footer>
   </div>
   
@@ -752,56 +798,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/17/Markdown%E8%AF%AD%E6%B3%95/" data-id="ck7sxr0uw00017ovlchdkh7m4" data-title="Markdown语法" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/17/Markdown%E8%AF%AD%E6%B3%95/" data-id="ck7t1x4c20000ewvl4godf2i7" data-title="Markdown语法" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/study/" rel="tag">study</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-jfreechart的使用心得" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/02/16/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" class="article-date">
-  <time class="dt-published" datetime="2020-02-16T07:52:00.000Z" itemprop="datePublished">2020-02-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/02/16/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">jfreechart的使用心得</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Jfreechart是一个开源的统计图表展示库，使用java代码编写，于各行各业中被广泛使用。</p>
-<h2 id="柱状图"><a href="#柱状图" class="headerlink" title="柱状图"></a>柱状图</h2><h3 id="调整柱状图的展示方位"><a href="#调整柱状图的展示方位" class="headerlink" title="调整柱状图的展示方位"></a>调整柱状图的展示方位</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ChartFactory.createBarChart&#123;</span><br><span class="line">	<span class="string">"title"</span>,</span><br><span class="line">	<span class="string">"X轴"</span>,</span><br><span class="line">	<span class="string">"Y轴"</span>,</span><br><span class="line">	PlotOrientation.HORIZONTAL, <span class="comment">// 柱状图水平显示</span></span><br><span class="line">	<span class="keyword">true</span>,</span><br><span class="line">	<span class="keyword">true</span>,</span><br><span class="line">	<span class="keyword">false</span>);</span><br></pre></td></tr></table></figure>
-<p>其中 <strong>PlotOrientation.HORIZONTAL</strong> 控制柱状图水平展示，<strong>PlotOrientation.VERTICAL</strong> 控制柱状图垂直展示。</p>
-<h3 id="控制X轴的展示位置"><a href="#控制X轴的展示位置" class="headerlink" title="控制X轴的展示位置"></a>控制X轴的展示位置</h3><pre><code class="java"><span class="keyword">final</span> CategoryPlot plot = chart.getCategoryPlot();
-plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
-<p>其中 <strong>AxisLocation.TOP_OR_LEFT</strong> 控制X轴的数据居于柱状图顶部展示。<br>另外，<strong>AxisLocation.BOTTOM_OR_RIGHT</strong> 控制X轴的数据居于柱状图底部展示。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" data-id="ck7sxr0uy00027ovl5v7o4r55" data-title="jfreechart的使用心得" class="article-share-link">Share</a>
-      
-      
-      
     </footer>
   </div>
   
@@ -823,7 +825,7 @@ plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/position/" rel="tag">position</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/" rel="tag">study</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/popover/" rel="tag">popover</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/position/" rel="tag">position</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/study/" rel="tag">study</a></li></ul>
     </div>
   </div>
 
@@ -833,7 +835,7 @@ plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/position/" style="font-size: 10px;">position</a> <a href="/tags/study/" style="font-size: 10px;">study</a>
+      <a href="/tags/bootstrap/" style="font-size: 10px;">bootstrap</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/popover/" style="font-size: 10px;">popover</a> <a href="/tags/position/" style="font-size: 10px;">position</a> <a href="/tags/study/" style="font-size: 10px;">study</a>
     </div>
   </div>
 
@@ -855,11 +857,15 @@ plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
       <ul>
         
           <li>
-            <a href="/2020/03/15/hello-world/">你好 世界</a>
+            <a href="/2020/03/15/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/">position的几种定位方式</a>
           </li>
         
           <li>
-            <a href="/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">popover使用教程</a>
+            <a href="/2020/03/15/popover%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">bootstrap popover使用教程</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/15/jfreechart%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">jfreechart的使用心得</a>
           </li>
         
           <li>
@@ -867,11 +873,7 @@ plot.setRangeAxisLocation(AxisLocation.TOP_OR_LEFT);</code></pre>
           </li>
         
           <li>
-            <a href="/2020/03/12/position%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9A%E4%BD%8D%E6%96%B9%E6%B3%95/">position的几种定位方式</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/17/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a>
+            <a href="/2020/03/15/hello_world/">你好 世界</a>
           </li>
         
       </ul>
