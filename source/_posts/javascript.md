@@ -3,6 +3,7 @@ title: javascript最佳做法
 date: 2020-03-15 12:30:30
 tags: 
 	- javascript
+categories: 前端
 ---
 ![我爱javascript](https://w.wallhaven.cc/full/76/wallhaven-76opry.png)
 
